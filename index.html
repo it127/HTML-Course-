@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course - Web Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#courses">Courses</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section for HTML Course -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">HTML & CSS Course</h1>
+            <p class="hero-subtitle">Master the basics of web development with HTML and CSS.</p>
+            <button class="cta-button" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+        <div class="hero-image">
+            <img src="IMG-20250602-WA0010.jpg" alt="HTML & CSS Coding Illustration" class="floating">
+        </div>
+    </section>
+
+    <!-- Course Content Section -->
+    <section id="course-content" class="section">
+        <h2 class="section-title">Course Overview</h2>
+        <p class="course-description">
+            This HTML & CSS course is designed to help you build a strong foundation in web development. You'll learn the essentials of HTML for structuring web pages and CSS for styling and layout. By the end of this course, you'll be able to create beautiful and functional web pages.
+        </p>
+
+        <!-- Basics Section -->
+        <section class="section">
+            <h2 class="section-title">HTML Basics</h2>
+            <div class="content">
+                <h3>1. Introduction to HTML</h3>
+                <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way.</p>
+
+                <h3>2. HTML Elements and Tags</h3>
+                <p>HTML elements are represented by tags. Tags are enclosed in angle brackets (<>). Most tags have an opening tag and a closing tag. For example, <code>&lt;h1&gt;</code> is an opening tag, and <code>&lt;/h1&gt;</code> is a closing tag.</p>
+
+                <h3>3. Document Structure</h3>
+                <p>A basic HTML document structure includes the <code>&lt;!DOCTYPE&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> tags. The <code>&lt;head&gt;</code> section contains meta information, and the <code>&lt;body&gt;</code> section contains the content of the web page.</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <h3>4. Common HTML Elements</h3>
+                <p>Some common HTML elements include headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>), paragraphs (<code>&lt;p&gt;</code>), links (<code>&lt;a&gt;</code>), images (<code>&lt;img&gt;</code>), and lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>).</p>
+            </div>
+        </section>
+
+        <!-- Advanced Topics Section -->
+        <section class="section">
+            <h2 class="section-title">Advanced HTML Topics</h2>
+            <div class="content">
+                <h3>1. Semantic HTML</h3>
+                <p>Semantic HTML is the use of HTML to reinforce the semantics, or meaning, of the information in web pages. For example, using <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;nav&gt;</code> tags to structure your content.</p>
+
+                <h3>2. Forms</h3>
+                <p>HTML forms are used to collect user input. The <code>&lt;form&gt;</code> element is used to create a form. Inside the form, you can use various input elements like <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;button&gt;</code>.</p>
+                <pre><code>&lt;form&gt;
+    &lt;label&gt;Name: &lt;input type="text" name="name"&gt;&lt;/label&gt;
+    &lt;label&gt;Email: &lt;input type="email" name="email"&gt;&lt;/label&gt;
+    &lt;label&gt;Message: &lt;textarea name="message"&gt;&lt;/textarea&gt;&lt;/label&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+                <h3>3. Tables</h3>
+                <p>HTML tables are used to display data in a tabular format. The <code>&lt;table&gt;</code> element is used to create a table, and <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements are used to define rows, headers, and data cells.</p>
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John Doe&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jane Smith&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+                <h3>4. Multimedia</h3>
+                <p>HTML supports multimedia elements like images, audio, and video. The <code>&lt;img&gt;</code> tag is used to embed images, <code>&lt;audio&gt;</code> for audio, and <code>&lt;video&gt;</code> for video.</p>
+                <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Less Commonly Used Tags Section -->
+        <section class="section">
+            <h2 class="section-title">Less Commonly Used HTML Tags</h2>
+            <div class="content">
+                <h3>1. <code>&lt;abbr&gt;</code></h3>
+                <p>The <code>&lt;abbr&gt;</code> tag defines an abbreviation or an acronym. You can use the <code>title</code> attribute to provide the full expansion of the abbreviation.</p>
+                <pre><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></pre>
+
+                <h3>2. <code>&lt;address&gt;</code></h3>
+                <p>The <code>&lt;address&gt;</code> tag specifies the contact information for the author/owner of a document or an article. This tag is typically styled with italic text.</p>
+                <pre><code>&lt;address&gt;
+    Written by &lt;a href="mailto:webmaster@example.com"&gt;Webmaster&lt;/a&gt;.&lt;br&gt;
+    Visit us at &lt;a href="https://example.com"&gt;Example.com&lt;/a&gt;.&lt;br&gt;
+    Box 564, Disneyland&lt;br&gt;
+    USA
+&lt;/address&gt;</code></pre>
+
+                <h3>3. <code>&lt;bdi&gt;</code></h3>
+                <p>The <code>&lt;bdi&gt;</code> tag isolates a part of text that might be formatted in a different direction from other text outside it. This is useful for user-generated content where the direction of text is unknown.</p>
+                <pre><code>&lt;p&gt;Total count: &lt;span&gt;&lt;bdi&gt;42&lt;/bdi&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
+
+                <h3>4. <code>&lt;bdo&gt;</code></h3>
+                <p>The <code>&lt;bdo&gt;</bdo&gt; tag is used to override the current text direction. The <code>dir</code> attribute specifies the direction of the text.</p>
+                <pre><code>&lt;p&gt;This text goes from left to right.&lt;/p&gt;
+&lt;p&gt;&lt;bdo dir="rtl"&gt;This text goes from right to left.&lt;/bdo&gt;&lt;/p&gt;</code></pre>
+
+                <h3>5. <code>&lt;data&gt;</code></h3>
+                <p>The <code>&lt;data&gt;</code> tag links a visible content of a tag to a machine-readable translation. If the content is a date/time, the browser will recognize it as a date/time, even if the format is non-standard.</p>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;&lt;data value="21053"&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;data value="21054"&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;data value="21055"&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                <h3>6. <code>&lt;dfn&gt;</code></h3>
+                <p>The <code>&lt;dfn&gt;</code> tag specifies the defining instance of a term. The term is usually marked with the <code>&lt;dfn&gt;</code> tag, and the definition follows.</p>
+                <pre><code>&lt;p&gt;The &lt;dfn&gt;HTML&lt;/dfn&gt; language is the standard markup language for creating web pages.&lt;/p&gt;</code></pre>
+
+                <h3>7. <code>&lt;ins&gt;</code></h3>
+                <p>The <code>&lt;ins&gt;</code> tag defines a text that has been inserted into a document. Browsers will usually strike through the text that has been inserted.</p>
+                <pre><code>&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;</code></pre>
+
+                <h3>8. <code>&lt;kbd&gt;</code></h3>
+                <p>The <code>&lt;kbd&gt;</code> tag defines keyboard input. It is typically styled with a monospace font.</p>
+                <pre><code>&lt;p&gt;Select &lt;kbd&gt;Ctrl + C&lt;/kbd&gt; to copy text (Windows).&lt;/p&gt;</code></pre>
+
+                <h3>9. <code>&lt;mark&gt;</code></h3>
+                <p>The <code>&lt;mark&gt;</code> tag defines highlighted text. It is often used to highlight text that is relevant in a given context.</p>
+                <pre><code>&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;</code></pre>
+
+                <h3>10. <code>&lt;ruby&gt;</code>, <code>&lt;rt&gt;</code>, <code>&lt;rp&gt;</code></h3>
+                <p>The <code>&lt;ruby&gt;</code> tag is used to mark up ruby annotations, which are often used to provide pronunciation guides for East Asian typography. The <code>&lt;rt&gt;</code> tag defines the pronunciation, and the <code>&lt;rp&gt;</code> tag defines what to show in browsers that do not support the <code>&lt;ruby&gt;</code> element.</p>
+                <pre><code>&lt;ruby&gt;
+    漢 &lt;rt&gt;ㄏㄢˋ&lt;/rt&gt;
+&lt;/ruby&gt;</code></pre>
+
+                <h3>11. <code>&lt;wbr&gt;</code></h3>
+                <p>The <code>&lt;wbr&gt;</code> tag represents a word break opportunity—a position within text where the browser may optionally break a line, though its default choice would be not to break the line at that position.</p>
+                <pre><code>&lt;p&gt;This is a verylongwordthatmightneedtobebrokeninto&lt;wbr&gt;smallerpieces&lt;/p&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Practical Examples Section -->
+        <section class="section">
+            <h2 class="section-title">Practical Examples</h2>
+            <div class="content">
+                <h3>1. Creating a Simple Web Page</h3>
+                <p>Here's a simple web page using HTML and CSS:</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Simple Web Page&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Welcome to My Simple Web Page&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+        &lt;a href="https://example.com"&gt;Visit Example.com&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <h3>2. Creating a Form</h3>
+                <p>Here's an example of a simple form:</p>
+                <pre><code>&lt;form&gt;
+    &lt;label&gt;Name: &lt;input type="text" name="name"&gt;&lt;/label&gt;
+    &lt;label&gt;Email: &lt;input type="email" name="email"&gt;&lt;/label&gt;
+    &lt;label&gt;Message: &lt;textarea name="message"&gt;&lt;/textarea&gt;&lt;/label&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+                <h3>3. Creating a Table</h3>
+                <p>Here's an example of a simple table:</p>
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John Doe&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jane Smith&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CodeMaster. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/it127" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
